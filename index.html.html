@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Consultation Services - Mahder Tamiru Mamo & Birtukan Dagnachew</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Ethiopic:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --primary-color: #0d3b5c;
+            --secondary-color: #1a5a8c;
+            --accent-color: #b8860b;
+            --light-color: #f5f7fa;
+            --dark-color: #333333;
+            --text-color: #2c3e50;
+            --text-light: #ffffff;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: var(--text-color);
+            line-height: 1.6;
+            background-color: var(--light-color);
+        }
+        
+        .amharic {
+            font-family: 'Noto Sans Ethiopic', 'Open Sans', sans-serif;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: var(--primary-color);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            color: var(--text-light);
+        }
+        
+        .logo i {
+            font-size: 2.2rem;
+            color: var(--accent-color);
+        }
+        
+        .logo-text h1 {
+            font-size: 1.6rem;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+        
+        .logo-text .amharic-name {
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: var(--accent-color);
+            margin-top: 3px;
+        }
+        
+        .logo-text .english-name {
+            font-size: 0.9rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+        
+        .contact-header {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            color: var(--text-light);
+        }
+        
+        .contact-header .phone {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 3px;
+        }
+        
+        .contact-header .phone i {
+            color: var(--accent-color);
+        }
+        
+        .contact-header .email {
+            font-size: 0.85rem;
+            opacity: 0.9;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+        
+        nav a {
+            color: var(--text-light);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.05rem;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: var(--accent-color);
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--text-light);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(13, 59, 92, 0.85), rgba(13, 59, 92, 0.9)), url('https://images.unsplash.com/photo-1589391886085-8b6b0ac72a1a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: var(--text-light);
+            text-align: center;
+            padding: 80px 0;
+        }
+        
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .hero h2 {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        
+        .hero .amharic-text {
+            font-size: 1.8rem;
+            margin-bottom: 25px;
+            line-height: 1.5;
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+        
+        .hero .english-text {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: var(--primary-color);
+            padding: 14px 32px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        
+        .btn:hover {
+            background-color: #d4a017;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        /* Sections */
+        section {
+            padding: 70px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .section-title h2 {
+            font-size: 2.3rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title h2:after {
+            content: '';
+            position: absolute;
+            width: 70px;
+            height: 4px;
+            background-color: var(--accent-color);
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        /* Services */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .service-card {
+            background-color: white;
+            border-radius: 6px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s;
+            border-top: 5px solid var(--secondary-color);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-8px);
+        }
+        
+        .service-icon {
+            background-color: var(--primary-color);
+            color: var(--accent-color);
+            font-size: 2.3rem;
+            padding: 22px;
+            text-align: center;
+        }
+        
+        .service-content {
+            padding: 25px;
+        }
+        
+        .service-content h3 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+        
+        /* About */
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+        
+        .about-image img {
+            width: 100%;
+            border-radius: 6px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .about-text h3 {
+            color: var(--primary-color);
+            font-size: 1.7rem;
+            margin-bottom: 20px;
+        }
+        
+        .about-text p {
+            margin-bottom: 20px;
+            font-size: 1.05rem;
+        }
+        
+        .amharic-description {
+            font-size: 1.1rem;
+            color: var(--secondary-color);
+            font-weight: 500;
+            line-height: 1.7;
+            margin-bottom: 25px;
+            padding: 15px;
+            background-color: rgba(26, 90, 140, 0.05);
+            border-right: 3px solid var(--accent-color);
+            border-radius: 0 4px 4px 0;
+        }
+        
+        /* Attorneys Section */
+        .attorneys-section {
+            background-color: #f8fafc;
+        }
+        
+        .attorneys-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+        
+        .attorney-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+        }
+        
+        .attorney-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+        }
+        
+        .attorney-header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .attorney-icon {
+            background-color: rgba(255, 255, 255, 0.1);
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 2.5rem;
+            color: var(--accent-color);
+            border: 3px solid var(--accent-color);
+        }
+        
+        .attorney-header h3 {
+            font-size: 1.6rem;
+            margin-bottom: 8px;
+        }
+        
+        .attorney-header .title {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-bottom: 5px;
+        }
+        
+        .attorney-header .amharic-name {
+            font-size: 1rem;
+            color: var(--accent-color);
+            margin-top: 5px;
+        }
+        
+        .attorney-body {
+            padding: 30px;
+        }
+        
+        .contact-details {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 15px;
+            background-color: #f8fafc;
+            border-radius: 8px;
+            border-left: 4px solid var(--accent-color);
+        }
+        
+        .contact-item i {
+            color: var(--primary-color);
+            font-size: 1.2rem;
+            width: 30px;
+        }
+        
+        .contact-item .label {
+            font-weight: 600;
+            color: var(--primary-color);
+            font-size: 0.9rem;
+            margin-bottom: 3px;
+        }
+        
+        .contact-item .value {
+            font-weight: 700;
+            color: var(--secondary-color);
+            font-size: 1.1rem;
+        }
+        
+        .contact-item .email-value {
+            font-size: 1rem;
+            word-break: break-all;
+        }
+        
+        /* Contact */
+        .contact-section {
+            background-color: #f0f4f8;
+        }
+        
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+        
+        .contact-item-large {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .contact-icon-large {
+            background-color: var(--primary-color);
+            color: var(--accent-color);
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+        
+        .contact-details-large h4 {
+            color: var(--primary-color);
+            margin-bottom: 5px;
+            font-size: 1.2rem;
+        }
+        
+        .contact-details-large .phone-large {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--secondary-color);
+        }
+        
+        .contact-details-large .email-large {
+            font-weight: 600;
+            color: var(--secondary-color);
+        }
+        
+        .contact-details-large p {
+            margin-bottom: 5px;
+        }
+        
+        .amharic-address {
+            font-size: 1.05rem;
+            margin-top: 8px;
+            color: var(--dark-color);
+        }
+        
+        .office-address {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 10px;
+            border-left: 4px solid var(--accent-color);
+        }
+        
+        .office-address p {
+            margin-bottom: 5px;
+        }
+        
+        .contact-form input,
+        .contact-form textarea,
+        .contact-form select {
+            width: 100%;
+            padding: 14px;
+            margin-bottom: 20px;
+            border: 1px solid #ccd6e0;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-family: 'Open Sans', sans-serif;
+        }
+        
+        .contact-form textarea {
+            height: 150px;
+            resize: vertical;
+        }
+        
+        .language-selector {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .lang-btn {
+            padding: 8px 16px;
+            background-color: #e9ecef;
+            border: 1px solid #ccd6e0;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        
+        .lang-btn.active {
+            background-color: var(--secondary-color);
+            color: white;
+            border-color: var(--secondary-color);
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--primary-color);
+            color: var(--text-light);
+            padding: 50px 0 25px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-column h3 {
+            color: var(--accent-color);
+            margin-bottom: 25px;
+            font-size: 1.4rem;
+        }
+        
+        .footer-column p {
+            margin-bottom: 20px;
+            line-height: 1.7;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: var(--secondary-color);
+            color: var(--text-light);
+            border-radius: 50%;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        
+        .social-links a:hover {
+            background-color: var(--accent-color);
+            transform: translateY(-3px);
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 25px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            .about-content, .contact-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .hero h2 {
+                font-size: 2.3rem;
+            }
+            
+            .hero .amharic-text {
+                font-size: 1.5rem;
+            }
+            
+            .attorneys-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .header-container {
+                flex-wrap: wrap;
+            }
+            
+            .contact-header {
+                order: 3;
+                width: 100%;
+                align-items: center;
+                margin-top: 15px;
+                display: none;
+            }
+            
+            .hero {
+                padding: 60px 0;
+            }
+            
+            .hero h2 {
+                font-size: 1.9rem;
+            }
+            
+            .hero .amharic-text {
+                font-size: 1.3rem;
+            }
+            
+            .hero .english-text {
+                font-size: 1.1rem;
+            }
+            
+            section {
+                padding: 50px 0;
+            }
+            
+            .section-title h2 {
+                font-size: 1.9rem;
+            }
+            
+            .logo-text h1 {
+                font-size: 1.3rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .logo-text .amharic-name {
+                font-size: 1rem;
+            }
+            
+            .hero h2 {
+                font-size: 1.7rem;
+            }
+            
+            .hero .amharic-text {
+                font-size: 1.2rem;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .attorney-header {
+                padding: 20px;
+            }
+            
+            .attorney-icon {
+                width: 80px;
+                height: 80px;
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <i class="fas fa-balance-scale"></i>
+                <div class="logo-text">
+                    <h1 class="amharic amharic-name">ህጋዊ አገልግሎት</h1>
+                    <div class="english-name">Legal Consultation Services</div>
+                </div>
+            </div>
+            
+            <div class="contact-header">
+                <div class="phone">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>+251 911 33 38 47 | +251-913-965001</span>
+                </div>
+                <div class="email">mahiye24@gmail.com | birtukandagnachew4@gmail.com</div>
+            </div>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav>
+                <ul id="navMenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#attorneys">Attorneys</a></li>
+                    <li><a href="#contact" class="btn">Contact Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-content">
+            <h2>Expert Legal Consultation</h2>
+            <div class="amharic-text amharic">
+                ማህደር ታምሩ ማሞ እና ብርቱካን ዳኛቸው
+            </div>
+            <p class="english-text">Providing expert legal counsel and representation with integrity, professionalism, and dedication to client success. Our team of experienced attorneys is ready to assist you with all your legal needs.</p>
+            <a href="#contact" class="btn">Schedule a Consultation</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Legal Services</h2>
+                <p>Comprehensive legal solutions for individuals and businesses</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-gavel"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Civil Litigation</h3>
+                        <p>Professional representation in civil disputes including contract disputes, personal injury claims, and property disagreements.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Family Law</h3>
+                        <p>Compassionate assistance with divorce, child custody, adoption, and other family-related legal matters.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Business Law</h3>
+                        <p>Legal guidance for businesses including formation, contracts, compliance, and intellectual property protection.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Attorneys Section -->
+    <section class="attorneys-section" id="attorneys">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Attorneys</h2>
+                <p>Meet our experienced legal professionals</p>
+            </div>
+            
+            <div class="attorneys-grid">
+                <!-- Mahder Tamiru Mamo -->
+                <div class="attorney-card">
+                    <div class="attorney-header">
+                        <div class="attorney-icon">
+                            <i class="fas fa-balance-scale"></i>
+                        </div>
+                        <h3>Mahder Tamiru Mamo</h3>
+                        <div class="title">Attorney and Legal Consultant</div>
+                        <div class="amharic-name amharic">ማህደር ታምሩ ማሞ</div>
+                    </div>
+                    <div class="attorney-body">
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-phone-alt"></i>
+                                <div>
+                                    <div class="label">Phone Number</div>
+                                    <div class="value">+251 911 33 38 47</div>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <div class="label">Email Address</div>
+                                    <div class="value email-value">mahiye24@gmail.com</div>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <div>
+                                    <div class="label">Specialization</div>
+                                    <div class="value">Civil, Family & Business Law</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Birtukan Dagnachew -->
+                <div class="attorney-card">
+                    <div class="attorney-header">
+                        <div class="attorney-icon">
+                            <i class="fas fa-gavel"></i>
+                        </div>
+                        <h3>Birtukan Dagnachew</h3>
+                        <div class="title">Attorney at all Federal Courts & Consultant At Law</div>
+                        <div class="amharic-name amharic">ብርቱካን ዳኛቸው</div>
+                    </div>
+                    <div class="attorney-body">
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-phone-alt"></i>
+                                <div>
+                                    <div class="label">Phone Number</div>
+                                    <div class="value">+251-913-965001</div>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <div class="label">Email Address</div>
+                                    <div class="value email-value">birtukandagnachew4@gmail.com</div>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <div>
+                                    <div class="label">Specialization</div>
+                                    <div class="value">Federal Court Litigation & Consultation</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Our Firm</h2>
+                <p>Professional background and expertise</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Legal Consultation Office">
+                </div>
+                
+                <div class="about-text">
+                    <h3>Our Legal Team</h3>
+                    <p class="amharic-description amharic">
+                        ጠበቃ ማህደር ታምሩ ማሞ እና ብርቱካን ዳኛቸው ከብዙ አመታት የህግ ልምድ ጋር በርካታ የህግ መስኮች ውስጥ ያገለገሉ ናቸው።
+                    </p>
+                    <p>With extensive experience in Ethiopian law and international legal practices, our attorneys provide dedicated legal counsel to clients facing complex legal challenges. Our approach combines deep legal knowledge with practical solutions tailored to each client's unique situation.</p>
+                    <p>We are committed to upholding the highest standards of professional ethics while delivering effective legal representation and advice.</p>
+                    
+                    <div style="margin-top: 30px;">
+                        <h4 style="color: var(--primary-color); margin-bottom: 10px;">Languages Spoken:</h4>
+                        <p>Amharic (Native), English (Fluent), Affan Oromo (Proficient)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Us</h2>
+                <p>Get in touch for a confidential consultation</p>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item-large">
+                        <div class="contact-icon-large">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-details-large">
+                            <h4>Phone Numbers</h4>
+                            <p class="phone-large">Mahder: +251 911 33 38 47</p>
+                            <p class="phone-large">Birtukan: +251-913-965001</p>
+                            <p>Available during business hours</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item-large">
+                        <div class="contact-icon-large">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details-large">
+                            <h4>Email Addresses</h4>
+                            <p class="email-large">mahiye24@gmail.com</p>
+                            <p class="email-large">birtukandagnachew4@gmail.com</p>
+                            <p>Response within 24 hours</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item-large">
+                        <div class="contact-icon-large">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details-large">
+                            <h4>Office Location</h4>
+                            <p>Addis Ababa, Ethiopia</p>
+                            <div class="office-address">
+                                <p><strong>Address:</strong> 4F E+LE CTE 401, Addis Ababa</p>
+                                <p class="amharic amharic-address">4ፍ ኢ+ሌ ሲቲኢ 401, አዲስ አበባ</p>
+                                <p><em>Both attorneys work from this shared office location</em></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item-large">
+                        <div class="contact-icon-large">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details-large">
+                            <h4>Consultation Hours</h4>
+                            <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                            <p>Saturday: 10:00 AM - 2:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <div class="language-selector">
+                        <button class="lang-btn active" id="englishBtn">English</button>
+                        <button class="lang-btn" id="amharicBtn">አማርኛ</button>
+                    </div>
+                    
+                    <form id="contactForm">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                        <input type="email" id="email" placeholder="Your Email" required>
+                        <input type="text" id="phone" placeholder="Your Phone Number">
+                        <select id="attorney" required>
+                            <option value="">Select Attorney to Contact</option>
+                            <option value="mahder">Mahder Tamiru Mamo</option>
+                            <option value="birtukan">Birtukan Dagnachew</option>
+                            <option value="both">Both Attorneys</option>
+                        </select>
+                        <select id="subject" required>
+                            <option value="">Select Legal Area</option>
+                            <option value="civil">Civil Litigation</option>
+                            <option value="family">Family Law</option>
+                            <option value="business">Business Law</option>
+                            <option value="federal">Federal Court Matters</option>
+                            <option value="other">Other Legal Matter</option>
+                        </select>
+                        <textarea id="message" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Legal Consultation Services</h3>
+                    <p>Professional legal services in Ethiopia with dedication to justice and client success. Our team of experienced attorneys is ready to assist you.</p>
+                    <p class="amharic">ጠበቃ እና የህግ አማካሪ አገልግሎቶች</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="mailto:mahiye24@gmail.com"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-user" style="margin-right: 10px; color: var(--accent-color);"></i> Mahder: +251 911 33 38 47</p>
+                    <p><i class="fas fa-user" style="margin-right: 10px; color: var(--accent-color);"></i> Birtukan: +251-913-965001</p>
+                    <p><i class="fas fa-envelope" style="margin-right: 10px; color: var(--accent-color);"></i> mahiye24@gmail.com</p>
+                    <p><i class="fas fa-envelope" style="margin-right: 10px; color: var(--accent-color);"></i> birtukandagnachew4@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt" style="margin-right: 10px; color: var(--accent-color);"></i> 4F E+LE CTE 401, Addis Ababa</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul style="list-style: none;">
+                        <li><a href="#home" style="color: #fff; text-decoration: none; display: block; margin-bottom: 10px;">Home</a></li>
+                        <li><a href="#services" style="color: #fff; text-decoration: none; display: block; margin-bottom: 10px;">Services</a></li>
+                        <li><a href="#attorneys" style="color: #fff; text-decoration: none; display: block; margin-bottom: 10px;">Attorneys</a></li>
+                        <li><a href="#about" style="color: #fff; text-decoration: none; display: block; margin-bottom: 10px;">About</a></li>
+                        <li><a href="#contact" style="color: #fff; text-decoration: none; display: block; margin-bottom: 10px;">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Legal Consultation Services - Mahder Tamiru Mamo & Birtukan Dagnachew. All rights reserved.</p>
+                <p style="margin-top: 8px;" class="amharic">ማህደር ታምሩ ማሞ እና ብርቱካን ዳኛቸው - ጠበቃ እና የህግ አማካሪ</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navMenu = document.getElementById('navMenu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            navMenu.style.display = navMenu.style.display === 'flex' ? 'none' : 'flex';
+            navMenu.style.flexDirection = 'column';
+            navMenu.style.position = 'absolute';
+            navMenu.style.top = '100%';
+            navMenu.style.left = '0';
+            navMenu.style.right = '0';
+            navMenu.style.backgroundColor = 'var(--primary-color)';
+            navMenu.style.padding = '25px';
+            navMenu.style.gap = '20px';
+            navMenu.style.boxShadow = '0 10px 20px rgba(0,0,0,0.2)';
+        });
+        
+        // Language switching for contact form
+        const englishBtn = document.getElementById('englishBtn');
+        const amharicBtn = document.getElementById('amharicBtn');
+        const contactForm = document.getElementById('contactForm');
+        
+        englishBtn.addEventListener('click', () => {
+            englishBtn.classList.add('active');
+            amharicBtn.classList.remove('active');
+            
+            // Update form placeholders to English
+            document.getElementById('name').placeholder = 'Your Name';
+            document.getElementById('email').placeholder = 'Your Email';
+            document.getElementById('phone').placeholder = 'Your Phone Number';
+            document.getElementById('attorney').options[0].text = 'Select Attorney to Contact';
+            document.getElementById('attorney').options[1].text = 'Mahder Tamiru Mamo';
+            document.getElementById('attorney').options[2].text = 'Birtukan Dagnachew';
+            document.getElementById('attorney').options[3].text = 'Both Attorneys';
+            document.getElementById('subject').options[0].text = 'Select Legal Area';
+            document.getElementById('subject').options[1].text = 'Civil Litigation';
+            document.getElementById('subject').options[2].text = 'Family Law';
+            document.getElementById('subject').options[3].text = 'Business Law';
+            document.getElementById('subject').options[4].text = 'Federal Court Matters';
+            document.getElementById('subject').options[5].text = 'Other Legal Matter';
+            document.getElementById('message').placeholder = 'Your Message';
+            contactForm.querySelector('button[type="submit"]').textContent = 'Send Message';
+        });
+        
+        amharicBtn.addEventListener('click', () => {
+            amharicBtn.classList.add('active');
+            englishBtn.classList.remove('active');
+            
+            // Update form placeholders to Amharic
+            document.getElementById('name').placeholder = 'ስምዎ';
+            document.getElementById('email').placeholder = 'ኢሜይልዎ';
+            document.getElementById('phone').placeholder = 'ስልክ ቁጥርዎ';
+            document.getElementById('attorney').options[0].text = 'የሚመነጩበትን ጠበቃ ይምረጡ';
+            document.getElementById('attorney').options[1].text = 'ማህደር ታምሩ ማሞ';
+            document.getElementById('attorney').options[2].text = 'ብርቱካን ዳኛቸው';
+            document.getElementById('attorney').options[3].text = 'ሁለቱም ጠበቆች';
+            document.getElementById('subject').options[0].text = 'የህግ መስክ ይምረጡ';
+            document.getElementById('subject').options[1].text = 'ሲቪል ህግ';
+            document.getElementById('subject').options[2].text = 'የቤተሰብ ህግ';
+            document.getElementById('subject').options[3].text = 'የቢዝነስ ህግ';
+            document.getElementById('subject').options[4].text = 'የፌደራል ፍርድ ቤት ጉዳዮች';
+            document.getElementById('subject').options[5].text = 'ሌላ የህግ ጉዳይ';
+            document.getElementById('message').placeholder = 'መልእክትዎ';
+            contactForm.querySelector('button[type="submit"]').textContent = 'መልእክት ይላኩ';
+        });
+        
+        // Form submission
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const isAmharic = amharicBtn.classList.contains('active');
+            const attorneySelect = document.getElementById('attorney');
+            const selectedAttorney = attorneySelect.options[attorneySelect.selectedIndex].text;
+            
+            if (isAmharic) {
+                alert(`አመሰግናለሁ! መልእክትዎ ለ ${selectedAttorney} ተቀብሏል። በቅርቡ እናገኝዎታለን።`);
+            } else {
+                alert(`Thank you for your message. Your inquiry has been sent to ${selectedAttorney}. We will contact you shortly.`);
+            }
+            
+            contactForm.reset();
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    if(window.innerWidth <= 768) {
+                        navMenu.style.display = 'none';
+                    }
+                }
+            });
+        });
+        
+        // Show mobile contact info when menu is toggled
+        mobileMenuBtn.addEventListener('click', () => {
+            const contactHeader = document.querySelector('.contact-header');
+            if (window.innerWidth <= 768) {
+                contactHeader.style.display = contactHeader.style.display === 'flex' ? 'none' : 'flex';
+                contactHeader.style.flexDirection = 'column';
+                contactHeader.style.alignItems = 'center';
+                contactHeader.style.marginTop = '20px';
+                contactHeader.style.padding = '15px';
+                contactHeader.style.backgroundColor = 'rgba(0,0,0,0.2)';
+                contactHeader.style.borderRadius = '4px';
+            }
+        });
+        
+        // Add hover effect to attorney cards
+        document.querySelectorAll('.attorney-card').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'translateY(-10px)';
+            });
+            
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'translateY(0)';
+            });
+        });
+    </script>
+</body>
+</html>
